@@ -19,7 +19,7 @@ function TrainingCalendar() {
   // kalenteritapahtumien mappaaminen eventsistä
   let calendarevents = events.map(x => {
     let newevent = {
-      'title': moment(x.date).format('h:mm') + " " + x.activity,
+      'title': moment(x.date).format('hh:mm') + " " + x.activity,
       'start': x.date,
       'end': x.date,
       'allDay?': false,
