@@ -1,6 +1,6 @@
 import _ from "lodash";
 import React, { useState, useEffect } from "react";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Label } from 'recharts';
   
 function Statistics() {
 
@@ -48,11 +48,13 @@ function Statistics() {
             top: 5,
             right: 5,
             left: 5,
-            bottom: 5
+            bottom: 15
             }}
         >
             <CartesianGrid strokeDasharray="0 0" />
-            <XAxis dataKey="activity" />
+            <XAxis dataKey="activity">
+                <Label value="Duration of each activity in minutes" offset={0} position="bottom" />
+            </XAxis>
             <YAxis />
             <Tooltip />    
             <Bar dataKey="duration" fill="#c286ac" />
