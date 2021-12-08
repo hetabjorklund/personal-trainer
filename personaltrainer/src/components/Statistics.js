@@ -53,7 +53,7 @@ function Statistics() {
         >
             <CartesianGrid strokeDasharray="0 0" />
             <XAxis dataKey="activity">
-                <Label value="Duration of each activity in minutes" offset={0} position="bottom" />
+                <Label value="Total duration of each activity in minutes" offset={0} position="bottom" />
             </XAxis>
             <YAxis />
             <Tooltip />    

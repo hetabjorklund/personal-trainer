@@ -21,7 +21,7 @@ function TrainingCalendar() {
     let newevent = {
       'title': moment(x.date).format('hh:mm') + " " + x.activity,
       'start': x.date,
-      'end': x.date,
+      'end': x.date, // tiedän ettei tätä lasketa oikein, on nyt sama kuin alkuaika
       'allDay?': false,
       'resource?': x.links[2].href
     };    
