@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Personal trainer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It fetches data from https://customerrest.herokuapp.com/api.
 
-## Available Scripts
+## Customers
+The Customers page shows a list of customers, with the options to add a new customer, delete or edit an existing customer, and add a training to an existing customer.
 
-In the project directory, you can run:
+## Trainings
+The Trainings page shows a list of trainings, with the option to delete an existing training.
 
-### `npm start`
+## Calendar
+The Calendar page shows the trainings in a calendar, with the option to change between a month or an agenda view. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Statistics
+The Statistics page shows the total duration of each activity in minutes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Components used
+The navigation is done with MUI's [AppBar](https://mui.com/components/app-bar/) and [Tabs](https://mui.com/components/tabs/).
 
-### `npm test`
+The Customers and Trainings pages use [React Table](https://react-table.tanstack.com/) (version 6) and MUI's [Dialog](https://mui.com/components/dialogs/) and [Button](https://mui.com/components/buttons/) components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The Calendar is done using [React Big Calendar](https://github.com/jquense/react-big-calendar).
 
-### `npm run build`
+The Statistics page uses the [SimpleBarChart from Recharts](https://recharts.org/en-US/examples/SimpleBarChart) and the sumBy function from [lodash](https://lodash.com/). 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Creator
+Heta Björklund
+ * Github: https://github.com/hetabjorklund
+ * LinkedIn: https://www.linkedin.com/in/heta-bjorklund
